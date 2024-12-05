@@ -1,38 +1,192 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app-container {
+  width: 100vw;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+
+.login-form-container {
+  width: 400px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 2px solid grey;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.login-form-container > div > div:first-child {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+}
+input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  outline: none;
+}
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:hover {
+  border-color: #0056b3;
+}
+
+.submit-btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  border: 2px solid grey;
+  background-color: #007bff;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.userlist-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 40px;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  padding-top: 10px;
+  
+  ;
+}
+.card {
+  position: relative;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #fefefe;
+
+  margin: 20px;
+}
+
+.card:hover {
+  scale:1.05;
+  transition: 1s;
+}
+.card .image img {
+  width: 200px;
+}
+
+.card .details div {
+  display: flex;
+  justify-content: center;
+}
+.edit-delete-btn-container {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.edit-delete-btn {
+  border-radius: 5px;
+  cursor: pointer;
+  width: 40%;
+  height: 100%;
+  font-size: large;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid grey;
+  background-color: #378af6;
+}
+
+.edit-delete-btn:hover {
+  border: 2px solid rgb(64, 63, 63);
+  background-color: #0c70f3;
+}
+.pageing {
+  width: 90%;
+  background-color: #548bc6;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.empty-user {
+  position: sticky;
+  bottom:0;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigationbar {
+  display: flex;
+  position: sticky;
+  top:0;
+  width: 100%;
+  z-index: 2;
+  /* margin-bottom: 20px; */
+}
+
+.edit-user{
+  width:100%;
+  height:100%;
+  padding:20px;
+}
+
+.search-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
