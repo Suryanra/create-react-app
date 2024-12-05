@@ -78,7 +78,7 @@ my-app/
 │   ├── App.js               # Main application component
 │   ├── index.js             # Application entry point
 │   ├── styles/              # CSS files for styling
-│   └── utils/               # Utility functions
+│   
 │
 ├── public/                  # Public assets (HTML template, images)
 ├── package.json             # Project configuration and dependencies
@@ -98,11 +98,20 @@ my-app/
 
 ## Screenshots
 
-### 1. User List with Search
-![User List Screenshot](https://via.placeholder.com/800x400?text=Screenshot+1)
+### 1. Login page
+![image](https://github.com/user-attachments/assets/3ab19b3e-c6b9-4f1b-980f-88c36c2738ce)
 
-### 2. Edit User Modal
-![Edit User Screenshot](https://via.placeholder.com/800x400?text=Screenshot+2)
+
+### 2. User List with Search
+![image](https://github.com/user-attachments/assets/fdc23009-42f8-4bc7-bf83-a374d16078dc)
+
+
+### 3. Edit User Modal
+![image](https://github.com/user-attachments/assets/8557d405-618a-4342-bf09-9739d42529b6)
+
+
+### 4. Search Bar
+![image](https://github.com/user-attachments/assets/78e489db-94a1-4bc3-8e4a-09b49eccac72)
 
 ---
 
