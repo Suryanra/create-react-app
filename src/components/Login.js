@@ -56,6 +56,7 @@ const Login = () => {
 
   return (
     <div className="app-container">
+        <div className="heading">Global Groupware Solutions Limited</div>
       <div className="login-form-container">
         <div>
           <div>Login </div>

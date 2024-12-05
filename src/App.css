@@ -16,6 +16,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.heading{
+  font-size: large;
+  padding-bottom: 10px;
+  font-weight: 500;
 }
 
 
